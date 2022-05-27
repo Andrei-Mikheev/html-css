@@ -1,0 +1,22 @@
+var time = 15;
+
+var goToDairy = false;
+var goToStore = false;
+var goToMarket = false;
+var dairyIsOpen = false;
+var storeIsOpen = false;
+var marketIsOpen = false;
+
+if (time >= 8 && time < 13 || time >= 14 && time < 19)
+  dairyIsOpen = true;
+if (time >= 9 && time < 14 || time >= 15 && time < 17)
+  storeIsOpen = true;
+if (time >= 7 && time < 20)
+  marketIsOpen = true;
+  
+if (dairyIsOpen)
+  goToDairy = true;
+else if (storeIsOpen)
+  goToStore = true;
+else if (marketIsOpen)
+  goToMarket = true;
